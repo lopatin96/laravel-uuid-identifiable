@@ -1,0 +1,30 @@
+{
+  "name": "lopatin96/laravel-uuid-identifiable",
+  "description": "Laravel uuid identifiable",
+  "autoload": {
+    "psr-4": {
+      "Atin\\LaravelUuidIdentifiable\\": "src"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Atin\\LaravelUuidIdentifiable\\UuidIdentifiableProvider"
+      ]
+    }
+  },
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Vladyslav Lopatin",
+      "email": "ilopatin3@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=8.1"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^8.0"
+  }
+}
