@@ -7,7 +7,7 @@ use Illuminate\Support\Str;
 
 trait HasUuidIdentifiable
 {
-    public static function bootUuidIdentifiable(): void
+    public static function bootHasUuidIdentifiable(): void
     {
         static::creating(static function (Model $model) {
             $model->uuid = Str::uuid();
