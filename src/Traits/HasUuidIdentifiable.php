@@ -10,7 +10,9 @@ trait HasUuidIdentifiable
     public static function bootHasUuidIdentifiable(): void
     {
         static::creating(static function (Model $model) {
-            $model->uuid = Str::uuid();
+            if (is_null($model->uuid)) {
+                $model->uuid = Str::uuid();
+            }
         });
     }
 }
